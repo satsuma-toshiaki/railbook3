@@ -62,7 +62,7 @@
 
   def search
     @value = params["search"]["title"]
-    @books = Book.where(title: params["search"]["title"])
+    @books = Book.where("title LIKE '%#{params["search"]["title"]}%'")
     render :index
   end
 
