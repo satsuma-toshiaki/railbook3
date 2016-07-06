@@ -1,0 +1,29 @@
+﻿<%= form_for(@publish) do |f| %>
+  <% if @publish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@publish.errors.count, "error") %> prohibited this publish from being saved:</h2>
+
+      <ul>
+      <% @publish.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :publishname %><br>
+    <%= f.text_field :publishname %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= select :user, :address, ["出雲市","雲南市","松江市"] %>
+    </div>
+  <div class="field">
+    <%= f.label :cd %><br>
+    <%= f.check_box :cd %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

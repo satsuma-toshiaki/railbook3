@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Books</h1>
+
+<%= form_tag({:action=>"search"}, {:method=>"GET"}) do %>
+  <%= text_field_tag "search[title]" %>
+  <%= submit_tag "検索" %>
+  <%= link_to "リセット", books_path %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <%= text_field (:book,:isbn) %>
+        <%= number_field(:book,:isbn) %>
+        <%= text_area(:book,:isbn) %>
+        <%=check_box(オブジェクト名, プロパティ名 [checked_value = "1", unchecked_value = "0"])%>
+        <%=%>
+        <%=%>
+        <%=%>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

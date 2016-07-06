@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  publishname: MyString
+  address: MyString
+  cd: false
+
+two:
+  publishname: MyString
+  address: MyString
+  cd: false
