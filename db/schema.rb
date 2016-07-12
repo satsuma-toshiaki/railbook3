@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20160712082407) do
 
   create_table "reviews", force: :cascade do |t|
     t.string   "book_id"
+    t.string   "user_id"
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
