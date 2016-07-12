@@ -32,7 +32,7 @@
         <td><%= book.publish %></td>
         <td><%= book.published %></td>
         <td><%= book.cd %></td>
-        <td><%= link_to 'Show', book %></td>
+        <td><%= link_to 'Show', reviews_path %></td>
         <td><%= link_to 'Edit', edit_book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm:"「#{book.title}」を削除しますか？" } %></td>
       </tr>

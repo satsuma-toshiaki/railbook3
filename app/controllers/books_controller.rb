@@ -31,7 +31,7 @@
     respond_to do |format|
       if @book.save
         format.html { redirect_to @book, notice: @book.title + 'は正常に登録されました。' }
-        format.json { render :new, status: :created, location: @book }     
+        format.json { render :show, status: :created, location: @book }     
       else
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
