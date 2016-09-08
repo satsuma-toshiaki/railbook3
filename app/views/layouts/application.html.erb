@@ -1,16 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
+  <div align=center>
   <head>
     <title>Railbook</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= image_tag 'railbook.png' %>
+    <font size="7" color="black">Railbook</font><br>
     <ul>
-      <li><%= link_to '書籍一覧', books_path %></li>
-      <li><%= link_to '出版社一覧', publishes_path %></li>
-      <li><%= link_to 'レビュー一覧', reviews_path %></li>
-      <li><%= link_to 'ユーザー一覧', users_path %></li>
+      <%= link_to '書籍一覧', books_path %>
+      <%= link_to '出版社一覧', publishes_path %>
+      <%= link_to 'レビュー一覧', reviews_path %>
+      <%= link_to 'ユーザー一覧', users_path %>
     </ul>
   </head>
 
