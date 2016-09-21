@@ -1,5 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
+	<div align=right>
+		ログインユーザー:<%= session[:name] %>
+		<%= link_to 'ログアウト', controller: :login, action: :index %>
+ 	</div>
   <div align=center>
   <head>
     <title>Railbook</title>
@@ -7,6 +11,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <font size="7" color="black">Railbook</font><br>
+		
     <ul>
       <%= link_to '書籍一覧', books_path %>
       <%= link_to '出版社一覧', publishes_path %>

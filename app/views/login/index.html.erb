@@ -1,6 +1,6 @@
-﻿<h1>Login#index</h1>
-<p>Find me in app/views/login/index.html.erb</p>
-<p style="color" : Red><%= @error %></p>
+﻿<div align=center>
+ユーザー名とパスワードを入力してください
+<p style="color" :Red><%= @error %></p>
 <%= form_tag action: :auth do %>
 	<div class="field">
 		<%= label_tag :userid, 'ユーザーID' %>:<br />
